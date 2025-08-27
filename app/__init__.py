@@ -10,7 +10,7 @@ load_dotenv('.env')
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']=os.getenv('DATABASE_URI')
-app.config['SQLALCHEMY_TRAK_MOTIFICATIONS']=False
+app.config['SQLALCHEMY_TRACK_MOTIFICATIONS']=False
 app.config['SECRET_KEY']=os.getenv('SECRET_KEY')
 app.config['UPLOAD_FILES']= r'static/data'
 
